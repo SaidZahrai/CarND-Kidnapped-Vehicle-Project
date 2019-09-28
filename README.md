@@ -2,9 +2,9 @@ This is a project in Udacity Nanodegree for Self-driving car, forked from [CarND
 
 
 # Particle Filter
-The goal of this project is to implement a particle filter and follow a car in a 2D simulation. Following tasks have been completed:
+The goal of this project is to implement a particle filter and follow a car in a 2D simulation environment. Following tasks have been completed:
 
-1. particle_filter.cpp is completed according to the instructions given in the file and steps as described in the lesson.
+1. src/particle_filter.cpp is completed according to the instructions given in the file and steps as described in the lesson.
 2. Two files, multiv_gauss.h and multiv_gauss.cpp, are taken from Tiffany's lessons for calculation of weights and added to src directory.
 <p align="center">
 <img src="./images/src.png" width="600"/>
@@ -14,13 +14,13 @@ The goal of this project is to implement a particle filter and follow a car in a
 <img src="./images/cmakelists.png" width="600"/>
 </p>
 
-After the above changes, the executable can be created by use of cmake and the build.sh provided in the project as shown below.
+After the above steps, the source code can be compiled and linked to make an executable. Note that the uWebSockets must have been installed to make the connection between the particle filter and the simulator possible. The script build.sh, provided in the project, builds the applicaiton as shown in the below figure.
 
 <p align="center">
 <img src="./images/make.png" width="600"/>
 </p>
 
-Once the executable is available the particle filter applicaiton can be launched using the run.sh script available in the project. Launching the application, will start the filter and wait for connection from the simulator. The connection will be established once the simulator is launched, as shown below.
+Once the executable is available the particle filter applicaiton can be launched using the run.sh script available in the project. Launching the application, will start the filter and wait for connection from the simulator. The connection will be established once the simulator is launched, as presented below.
 
 
 <p align="center">
@@ -31,7 +31,7 @@ Once the executable is available the particle filter applicaiton can be launched
 <img src="./images/run.png" width="600"/>
 </p>
 
-Pushing the start button will start the simulation. You will see that the car is accurately followed and the simulation ends with the final message of having uccessfully passed.
+Pushing the 'Start' button will start the simulation and particle filter will localize the car. The car is accurately followed and the simulation ends with the final expected message 'Success! Your particle filter passed!'.
 
 <p align="center">
 <img src="./images/simulation.png" width="600"/>
